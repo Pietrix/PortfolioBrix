@@ -25,7 +25,7 @@ async function getPosts() {
   `;
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(
+    `${process.env.GRAPHQL_ENDPOINT}?query=${encodeURIComponent(
       query
     )}`,
     {

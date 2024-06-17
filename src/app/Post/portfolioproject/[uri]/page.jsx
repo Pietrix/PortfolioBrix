@@ -21,7 +21,7 @@ async function getPost(uri) {
     uri,
   };
   
-  const res = await fetch(process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT, {
+  const res = await fetch(process.env.GRAPHQL_ENDPOINT, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -49,6 +49,7 @@ const Projects = ({ data }) => {
 
   return (
     <div id="wrapper">
+      <img src="http://portfolio.pieterswebsite.nl/wp-content/uploads/2024/04/heuristics.png"></img>
       <section id="buttons" className="py-10 flex justify-center content-center">
         {filters.map((category, idx) => (
           <Link key={`filters-${idx}`} href={{

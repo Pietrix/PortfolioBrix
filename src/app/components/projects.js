@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 
@@ -84,7 +85,7 @@ const Projects = ({ data }) => {
           <div key={post.id} className="card">
             <Link href={`/Post/${post.uri}`}>
               <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-                <img
+                <Image
                   src={post.portfolioProjectField.mainimage.node.mediaItemUrl}
                   alt="Product"
                   className="h-80 w-72 object-cover rounded-t-xl"

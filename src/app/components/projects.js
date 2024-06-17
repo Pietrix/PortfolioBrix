@@ -1,17 +1,17 @@
 "use client";
 import Link from "next/link";
-import { UseSearchParams } from "next/navigation";
-import { UseState, UseEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
 
-const projects = ({ data }) => {
+const Projects = ({ data }) => {
 
   let filters = ["PT", "SO", "TO", "OP", "PL", "GI"];
-  const params = UseSearchParams();
+  const params = useSearchParams();
 
-  const [selectedFilter, setSelectedFilter] = UseState(params.get("outcome" || "0"));
-  const [filteredPosts, setFilteredPosts] = UseState(data);
+  const [selectedFilter, setSelectedFilter] = useState(params.get("outcome" || "0"));
+  const [filteredPosts, setFilteredPosts] = useState(data);
 
-  UseEffect(() => {
+  useEffect(() => {
     filterPosts();
   }, [selectedFilter]);
 
@@ -113,4 +113,4 @@ const projects = ({ data }) => {
     </div>
   );
 };
-export default projects;
+export default Projects;

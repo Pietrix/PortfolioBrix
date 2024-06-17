@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        opacity: .1;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-4);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1=".82" y1="64.97" x2="66.27" y2="48.58" gradientUnits="userSpaceOnUse">
+      <stop offset=".12" stop-color="#021815" stop-opacity="0"/>
+      <stop offset="1" stop-color="#001013"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="14.84" y1="50" x2="50" y2="50" gradientTransform="translate(-25.86 37.57) rotate(-45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#88c5e6"/>
+      <stop offset="1" stop-color="#287dac"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="32.42" y1="50" x2="67.58" y2="50" gradientTransform="translate(-20.71 50) rotate(-45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4694cb"/>
+      <stop offset="1" stop-color="#18447e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="50" y1="50" x2="85.16" y2="50" gradientTransform="translate(-15.56 62.43) rotate(-45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b1ddcb"/>
+      <stop offset="1" stop-color="#47b8bf"/>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-1" points="50 38.21 50 32.42 32.7 38.12 32.7 32.42 0 43.19 0 89.74 67.58 67.57 67.58 32.42 50 38.21"/>
+  <rect class="cls-2" x="19.99" y="37.57" width="24.86" height="24.86" transform="translate(44.85 -8.28) rotate(45)"/>
+  <rect class="cls-3" x="37.57" y="37.57" width="24.86" height="24.86" transform="translate(50 -20.71) rotate(45)"/>
+  <rect class="cls-4" x="55.15" y="37.57" width="24.86" height="24.86" transform="translate(55.15 -33.14) rotate(45)"/>
+</svg>

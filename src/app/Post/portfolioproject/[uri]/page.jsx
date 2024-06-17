@@ -93,7 +93,7 @@ export default async function PostDetails({ params }) {
       </div>
         <div  className="Document flex flex-col justify-center items-center my-10">
           <a></a>
-          {post.portfolioProjectField.document != undefined && post.portfolioProjectField.document != null ? <object className="pdf" data={post.portfolioProjectField.document.node.mediaItemUrl} width="60%" height="800px"></object> : "No document"}
+          {post.portfolioProjectField.document != undefined && post.portfolioProjectField.document != null ? <object className="pdf" alt={post.portfolioProjectField.document.node.mediaItemUrl} data={post.portfolioProjectField.document.node.mediaItemUrl} width="60%" height="800px"></object> : "No document"}
         </div>
     </main>
   );

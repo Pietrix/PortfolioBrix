@@ -1,5 +1,7 @@
+import { FaRegFilePdf } from "react-icons/fa6";
+import Link from "next/link";
+
 async function getPost(uri) {
-  console.log("hello" + uri);
   const query = `
   query query($uri: ID!) {
     portfolioProject(id: $uri, idType: URI) {
@@ -43,8 +45,6 @@ async function getPost(uri) {
 
 export default async function PostDetails({ params }) {
   const post = await getPost("portfolioproject/"+params.uri);
-  console.log(post.portfolioProjectField.outcomes);
-  console.log("portfolioproject/"+params.uri);
 
   return (
     <main>
@@ -95,6 +95,12 @@ export default async function PostDetails({ params }) {
           <a></a>
           {post.portfolioProjectField.document != undefined && post.portfolioProjectField.document != null ? <object className="pdf" alt={post.portfolioProjectField.document.node.mediaItemUrl} data={post.portfolioProjectField.document.node.mediaItemUrl} width="60%" height="800px"></object> : "No document"}
         </div>
+        <Link href={post.portfolioProjectField.document.node.mediaItemUrl}>
+          <div className="downloadButton flex justify-center items-center text-white bg-black rounded-full mx-auto max-w-fit py-4 px-10 md:mt-0 mt-10">
+            <p className="mr-4">Open bestand</p>
+            <FaRegFilePdf />
+          </div>
+        </Link>
     </main>
   );
 }

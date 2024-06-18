@@ -45,7 +45,7 @@ const Footer = () => {
         </ul>
         </div>
     </div> */}
-    <a className={`fixed bottom-0 right-0 selector rounded-full my-5 mx-5 py-5 px-5 scrollToTopButton ${isVisible ? 'opacity-100' : 'opacity-0'}`} onClick={scrollToTop}>
+    <a className={`fixed bottom-0 right-0 rounded-full my-5 mx-5 py-5 px-5 scrollToTopButton ${isVisible ? 'opacity-100' : 'opacity-0'}`} onClick={scrollToTop}>
     <BsArrowUp />
     </a>
 </footer>

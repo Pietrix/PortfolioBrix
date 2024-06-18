@@ -49,9 +49,9 @@ const Projects = ({ data }) => {
 
   return (
     <div id="wrapper">
-      <section id="buttons" className="py-10 flex justify-center content-center">
+      <section id="buttons" className="px-10 md:px-0 py-10 md:flex justify-center content-center grid grid-cols-2 gap-4">
         {filters.map((category, idx) => (
-          <Link key={`filters-${idx}`} href={{
+          <Link className="flex justify-center" key={`filters-${idx}`} href={{
             pathname: "/",
             query: toggelQuery("outcome", category)
           }}>
@@ -59,10 +59,10 @@ const Projects = ({ data }) => {
             onClick={() => buttonHandler(category)}
             className={`button ${
               selectedFilter === category ? "active" : "off"
-            } flex flex-col justify-center items-center mx-3 my-6 rounded-xl`}   
+            } flex flex-col justify-center items-center mx-3 my-4 md:my-6 rounded-xl`}   
           >
                         <div className="hasTooltip2">
-              <span className="tooltip2 absolute z-150 whitespace-normal break-words rounded-lg py-1.5 px-3 text-sm font-normal focus:outline-none">
+              <span className="tooltip2 absolute z-150 whitespace-normal py-1.5 px-3 text-sm font-normal focus:outline-none max-w-32 md:max-w-fit">
               {category == 'PT' && <p>Profesional duties</p>}
                       {category == 'SO' && <p>Situation-orientation</p>}
                       {category == 'TO' && <p>Future-oriented organization</p>}
@@ -70,7 +70,7 @@ const Projects = ({ data }) => {
                       {category == 'PL' && <p>Personal leadership</p>}
                       {category == 'GI' && <p>Targeted interaction</p>}
               </span>
-            <img className="size-20" src={`${category}.svg`}></img>
+            <img className="size-16 md:size-20" src={`${category}.svg`}></img>
             </div>
           </button>
           </Link>

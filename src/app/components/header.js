@@ -16,7 +16,7 @@ const Header = () => {
       <div className="hidden md:flex flex-row w-3/12 items-center">
       <a href="/"><img className="max-h-10" src="/Logo-48x48.png"></img></a>
         </div>
-      <nav className="selector rounded-full w-10/12 md:w-4/12 max-w-md">
+      <nav className="selector rounded-full w-10/12 md:w-4/12 max-w-md mt-2 md:mt-0">
         <ul id="nav"className="wrapper py-2 h-full w-full text-lg">
           <li className={pathname === "/" ? "activeLink link" : "link"}><Link href="/">Portfolio</Link></li>
           <li className={pathname === "/leeswijzer" ? "activeLink link" : "link"}><Link href="/leeswijzer">Leeswijzer</Link></li>

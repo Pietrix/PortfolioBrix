@@ -93,6 +93,34 @@ button {
   transform: translatex(-50%) translateY(100px);
   transition: all 0.5s ease 0s;
 }
+.downloadButton{
+ visibility: visible;
+ border-width: 1px;
+ transition: all 0.5s ease 0s;
+}
+.downloadButton:hover{
+ border-color: black;
+ background: #f0f0f0;
+ color: black;
+ }
+ .downloadButton:active{
+  color: white;
+  background-color: black;
+  }
+
+
+@media (max-width: 768px) {
+  .tooltip2 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(-50%) translateY(75px);
+    transition: all 0.5s ease 0s;
+  }
+
+  .Document{
+    display: none;
+  }
+ }
 
 .hasTooltip2:hover .tooltip2 {
   opacity: 100;
@@ -111,6 +139,7 @@ button {
 .scrollToTopButton{
   color: white;
   background-color: black;
+  border-color: black;
   border-width: 1px;
   transition: all 0.5s ease 0s;
 }

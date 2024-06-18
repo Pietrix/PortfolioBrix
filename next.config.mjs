@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    env:{GRAPHQL_ENDPOINT: "http://portfolio.pieterswebsite.nl/graphql"},
+    env:{GRAPHQL_ENDPOINT: "https://portfolio.pieterswebsite.nl/graphql"},
     images: { unoptimized: true,    
         remotePatterns: [
         {

@@ -49,7 +49,6 @@ const Projects = ({ data }) => {
 
   return (
     <div id="wrapper">
-      <img src="http://portfolio.pieterswebsite.nl/wp-content/uploads/2024/04/heuristics.png"></img>
       <section id="buttons" className="py-10 flex justify-center content-center">
         {filters.map((category, idx) => (
           <Link key={`filters-${idx}`} href={{
@@ -86,7 +85,7 @@ const Projects = ({ data }) => {
           <div key={post.id} className="card">
             <Link href={`/Post/${post.uri}`}>
               <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-                <Image
+                <img
                   src={post.portfolioProjectField.mainimage.node.mediaItemUrl}
                   alt="Product"
                   className="h-80 w-72 object-cover rounded-t-xl"

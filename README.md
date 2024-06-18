@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio met Next.js en WordPress CMS
 
-## Getting Started
+Dit is de code van mijn portfolio, ontwikkeld met Next.js en WordPress als headless CMS. De website wordt gehost op het Vercel platform en is live te bekijken via deze link: [Portfolio op Vercel](https://portfolio-brix.vercel.app).
 
-First, run the development server:
+## Lokale installatie en draaien van de applicatie
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Volg deze stappen om de applicatie lokaal te draaien:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Vereisten
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Node.js geïnstalleerd op je systeem
+- Een WordPress-site als headless CMS met de juiste endpoints en content beschikbaar
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Installatie
 
-## Learn More
+1. **Clone de repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone <repository-url>
+   cd <project-folder>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Installeer de afhankelijkheden:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    npm install
 
-## Deploy on Vercel
+3. **Start de ontwikkelserver:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Dit start de Next.js ontwikkelserver. Open [http://localhost:3000](http://localhost:3000) om je applicatie in de browser te bekijken.

@@ -66,7 +66,7 @@ const Projects = ({ data }) => {
               {category == 'PT' && <p>Profesional duties</p>}
                       {category == 'SO' && <p>Situation-orientation</p>}
                       {category == 'TO' && <p>Future-oriented organization</p>}
-                      {category == 'OP' && <p>Situation-orientation</p>}
+                      {category == 'OP' && <p>Investigative problem solving</p>}
                       {category == 'PL' && <p>Personal leadership</p>}
                       {category == 'GI' && <p>Targeted interaction</p>}
               </span>
